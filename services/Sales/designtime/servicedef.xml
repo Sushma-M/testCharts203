@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="Sales" CRUDService="true" type="DataService" springFile="Sales.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.wavemaker.testcharts203.sales.SalesData">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="name" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="sales" typeRef="java.lang.Integer" isList="false" allowNull="true"/>
+            <element name="orders" typeRef="java.lang.Integer" isList="false" allowNull="true"/>
+            <element name="year" typeRef="java.util.Date" isList="false" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>
